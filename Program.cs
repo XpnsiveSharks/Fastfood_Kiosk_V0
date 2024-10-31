@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fastfood_Kiosk_V0.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,8 +14,8 @@ namespace Fastfood_Kiosk_V0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Views.AddingCategoryView());
-
+            //Application.Run(new Views.AddingCategoryView());
+            Application.Run(new Views.CustomerIndexView());
         }
     }
 }

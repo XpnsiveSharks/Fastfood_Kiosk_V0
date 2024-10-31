@@ -19,19 +19,8 @@
             }
             base.Dispose(disposing);
         }
-
-        #region Component Designer generated code
-
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-            components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        }
-
-        #endregion
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Guna.UI2.WinForms.Guna2PictureBox CategoryImagePictureBox;
+        private System.Windows.Forms.Label CategoryNameLabel;
     }
 }

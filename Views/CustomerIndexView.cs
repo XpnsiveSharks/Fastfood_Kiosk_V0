@@ -1,12 +1,13 @@
 ﻿using Fastfood_Kiosk_V0.Models;
 using Fastfood_Kiosk_V0.ViewModels;
-using Fastfood_Kiosk_V0.Views.UserControl;
+using Fastfood_Kiosk_V0.Views.UserControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Design;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace Fastfood_Kiosk_V0.Views
         public CustomerIndexView()
         {
             InitializeComponent();
+            LoadCategories();
         }
         private void LoadCategories()
         {
@@ -26,11 +28,11 @@ namespace Fastfood_Kiosk_V0.Views
             List<Category> categories = categoryViewModel.LoadAllCategories();
             foreach(Category category in categories)
             {
-                CategoryUserControl categoryUserControl = new CategoryUserControl
+                DisplayCategoryUserControl categoryUserControl = new DisplayCategoryUserControl
                 {
                     CategoryId = category.Category_Id,
                     CategoryName = category.Category_Name,
-                    CategoryImage = category.Category_Image
+                    CategoryImage = Image.FromFile(Path.Combine(Application.StartupPath,"Resources",category.Category_Image))
                 };
                 CategoryFlowLayoutPanel.Controls.Add(categoryUserControl);
             }

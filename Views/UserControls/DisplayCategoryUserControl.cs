@@ -8,24 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Fastfood_Kiosk_V0.Views.UserControl
+namespace Fastfood_Kiosk_V0.Views.UserControls
 {
-    public partial class CategoryUserControl : UserControl
+    public partial class DisplayCategoryUserControl : UserControl
     {
-        public CategoryUserControl()
+        public DisplayCategoryUserControl()
         {
             InitializeComponent();
         }
         public int CategoryId { get; set; }
         public Image CategoryImage 
         {
-            get => CategoryImagePictureBox.Image;
+            get => CategoryImagePictureBox.Image; 
             set => CategoryImagePictureBox.Image = value;
         }
         public string CategoryName
         {
-            get => CategoryImagePictureBox.Text;
-            set => CategoryImagePictureBox.Text = value;
+            get => CategoryNameLabel.Text;
+            set => CategoryNameLabel.Text = value;
         }
     }
 }
