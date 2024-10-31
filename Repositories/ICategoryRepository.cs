@@ -10,6 +10,6 @@ namespace Fastfood_Kiosk_V0.Repositories
     internal interface ICategoryRepository
     {
         void AddCategory(Category category);
-
+        List<Category> GetAllCategories();
     }
 }

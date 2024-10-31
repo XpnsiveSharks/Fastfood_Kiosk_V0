@@ -11,19 +11,28 @@ namespace Fastfood_Kiosk_V0.ViewModels
 {
     internal class CategoryViewModel
     {
+        private readonly ConfigurationLoader _configurationLoader;
+        private readonly DatabaseConnection _databaseConnection;
+        private readonly CategoryRepository _categoryRepository;
+        public CategoryViewModel()
+        {
+            _configurationLoader = new ConfigurationLoader();
+            _databaseConnection = new DatabaseConnection(_configurationLoader.Configuration);
+            _categoryRepository = new CategoryRepository(_databaseConnection);
+        }
+
         public void AddingCategory(string categoryName, string categoryImage)
         {
-            var configurationLoader = new ConfigurationLoader();
-            using (var databaseConnection = new DatabaseConnection(configurationLoader.Configuration))
+            var newCategory = new Category
             {
-                CategoryRepository category = new CategoryRepository(databaseConnection);
-                var newCategory = new Category
-                {
-                    Category_Name = categoryName,
-                    Category_Image = categoryImage
-                };
-                category.AddCategory(newCategory);
-            }
+                Category_Name = categoryName,
+                Category_Image = categoryImage
+            };
+            _categoryRepository.AddCategory(newCategory);
+        }
+        public List<Category> LoadAllCategories()
+        {
+            return _categoryRepository.GetAllCategories();
         }
     }
 }

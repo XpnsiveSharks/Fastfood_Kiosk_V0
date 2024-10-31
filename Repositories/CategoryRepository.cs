@@ -36,5 +36,20 @@ namespace Fastfood_Kiosk_V0.Repositories
                 throw new Exception("An error has occured while accessing the database", ex);
             }
         }
+
+        public List<Category> GetAllCategories()
+        {
+            try
+            {
+                using (var connection = databaseConnection.GetConnection())
+                {
+                    return connection.Query<Category>("SELECT * FROM menu_category_table").ToList();
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("An error has occured while accessing the database", ex);
+            }
+        }
     }
 }

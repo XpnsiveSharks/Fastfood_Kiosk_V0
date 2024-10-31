@@ -28,13 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.CategoryFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
+            // 
+            // CategoryFlowLayoutPanel
+            // 
+            this.CategoryFlowLayoutPanel.AutoScroll = true;
+            this.CategoryFlowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.CategoryFlowLayoutPanel.Location = new System.Drawing.Point(0, 0);
+            this.CategoryFlowLayoutPanel.Name = "CategoryFlowLayoutPanel";
+            this.CategoryFlowLayoutPanel.Size = new System.Drawing.Size(313, 734);
+            this.CategoryFlowLayoutPanel.TabIndex = 0;
             // 
             // CustomerIndexView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1190, 734);
+            this.Controls.Add(this.CategoryFlowLayoutPanel);
             this.Name = "CustomerIndexView";
             this.Text = "CustomerIndexView";
             this.ResumeLayout(false);
@@ -42,5 +53,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.FlowLayoutPanel CategoryFlowLayoutPanel;
     }
 }
