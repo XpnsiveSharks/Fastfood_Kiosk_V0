@@ -47,6 +47,8 @@ namespace Fastfood_Kiosk_V0.Repositories
                 }
             }
             catch (SqlException ex)
+
+             
             {
                 throw new Exception("An error has occured while accessing the database", ex);
             }

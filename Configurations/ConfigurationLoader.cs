@@ -20,3 +20,4 @@ namespace Fastfood_Kiosk_V0.Configurations
         }
     }
 }
+

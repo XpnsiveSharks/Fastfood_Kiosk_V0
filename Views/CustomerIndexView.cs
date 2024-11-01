@@ -37,5 +37,7 @@ namespace Fastfood_Kiosk_V0.Views
                 CategoryFlowLayoutPanel.Controls.Add(categoryUserControl);
             }
         }
+
+       
     }
 }
