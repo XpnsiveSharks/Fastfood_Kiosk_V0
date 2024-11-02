@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 
 namespace Fastfood_Kiosk_V0.Repositories
 {
-    internal interface ICategoryRepository
+    internal interface IMenuRepository
     {
-        void AddCategory(Category category);
-        List<Category> GetAllCategories();
-        int GetCategoryId();
+        void AddMenu(ItemMenu menu);
+        List<Menu> GetMenuList();
     }
 }

@@ -87,7 +87,7 @@
             this.PasswordTextBox.Location = new System.Drawing.Point(900, 273);
             this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.PasswordChar = '\0';
+            this.PasswordTextBox.PasswordChar = '*';
             this.PasswordTextBox.PlaceholderText = "";
             this.PasswordTextBox.SelectedText = "";
             this.PasswordTextBox.Size = new System.Drawing.Size(270, 38);

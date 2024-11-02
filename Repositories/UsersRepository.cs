@@ -12,16 +12,18 @@ namespace Fastfood_Kiosk_V0.Repositories
 {
     internal class UsersRepository : IUsersRepository
     {
-        private readonly DatabaseConnection databaseConnection;
-        public UsersRepository(DatabaseConnection databaseConnection)
+        private readonly DatabaseConnection _databaseConnection;
+        private readonly ConfigurationLoader _configurationLoader;
+        public UsersRepository()
         {
-            this.databaseConnection = databaseConnection;
+            _configurationLoader = new ConfigurationLoader();
+            _databaseConnection = new DatabaseConnection(_configurationLoader.Configuration);
         }
         public List<Users> GetAllUsers()
         {
             try
             {
-                using(var connection = databaseConnection.GetConnection())
+                using(var connection = _databaseConnection.GetConnection())
                 {
                     var query = "SELECT * FROM Users_Table";
                     return connection.Query<Users>(query).ToList();

@@ -15,6 +15,7 @@ namespace Fastfood_Kiosk_V0.Views.UserControls
         public DisplayCategoryUserControl()
         {
             InitializeComponent();
+           
         }
         public int CategoryId { get; set; }
         public Image CategoryImage 

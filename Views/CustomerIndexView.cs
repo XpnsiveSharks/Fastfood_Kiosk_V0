@@ -1,6 +1,7 @@
 ﻿using Fastfood_Kiosk_V0.Models;
 using Fastfood_Kiosk_V0.ViewModels;
 using Fastfood_Kiosk_V0.Views.UserControls;
+using Org.BouncyCastle.Asn1.Cmp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,24 +18,29 @@ namespace Fastfood_Kiosk_V0.Views
 {
     public partial class CustomerIndexView : Form
     {
+        private readonly CategoryViewModel _categoryViewModel;
         public CustomerIndexView()
         {
             InitializeComponent();
-            LoadCategories();
+            _categoryViewModel = new CategoryViewModel();
+            _categoryViewModel.PropertyChanged += CategoryViewModel_PropertyChanged;
+            _categoryViewModel.LoadCategories(); 
+            UpdateCategoryFlowLayoutPanel();
         }
-        private void LoadCategories()
+        private void CategoryViewModel_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            CategoryViewModel categoryViewModel = new CategoryViewModel();
-            List<Category> categories = categoryViewModel.LoadAllCategories();
-            foreach(Category category in categories)
+            if (e.PropertyName == nameof(_categoryViewModel.CategoryControls))
             {
-                DisplayCategoryUserControl categoryUserControl = new DisplayCategoryUserControl
-                {
-                    CategoryId = category.Category_Id,
-                    CategoryName = category.Category_Name,
-                    CategoryImage = Image.FromFile(Path.Combine(Application.StartupPath,"Resources",category.Category_Image))
-                };
-                CategoryFlowLayoutPanel.Controls.Add(categoryUserControl);
+                UpdateCategoryFlowLayoutPanel();
+            }
+        }
+
+        private void UpdateCategoryFlowLayoutPanel()
+        {
+            CategoryFlowLayoutPanel.Controls.Clear();
+            foreach (var control in _categoryViewModel.CategoryControls)
+            {
+                CategoryFlowLayoutPanel.Controls.Add(control);
             }
         }
     }

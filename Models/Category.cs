@@ -10,6 +10,6 @@ namespace Fastfood_Kiosk_V0.Models
     {
         public int Category_Id { get; set; }
         public string Category_Name { get; set; }
-        public string Category_Image { get; set; }
+        public string Category_Image_File_Path { get; set; }
     }
 }

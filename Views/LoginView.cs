@@ -13,26 +13,29 @@ namespace Fastfood_Kiosk_V0.Views
 {
     public partial class LoginView : Form
     {
+        private LoginViewModel _loginViewModel;
         public LoginView()
         {
             InitializeComponent();
+            _loginViewModel = new LoginViewModel();
+            UsernameTextBox.DataBindings.Add("Text", _loginViewModel, nameof(_loginViewModel.UserRole), false, DataSourceUpdateMode.OnPropertyChanged);
+            UsernameTextBox.DataBindings.Add("Text", _loginViewModel, nameof(_loginViewModel.User_name), false, DataSourceUpdateMode.OnPropertyChanged);
+            UsernameTextBox.DataBindings.Add("SelectedItem", _loginViewModel, nameof(_loginViewModel.Pass_word), false, DataSourceUpdateMode.OnPropertyChanged);
         }
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            LoginViewModel loginViewModel = new LoginViewModel();
+            bool loginSuccessful = _loginViewModel.Login();
 
-            string username = UsernameTextBox.Text.Trim();
-            string password = PasswordTextBox.Text.Trim();
-            string user_role = UserRoleComboBox.SelectedItem.ToString();
-            bool IsUserValid = loginViewModel.ValidateUser(username, password, user_role);
-            if (IsUserValid)
+            if (loginSuccessful)
             {
-                MessageBox.Show("User Exist");
+                MessageBox.Show("Login successful!");
+                // Important note
+                // add function to proceed to the next view or form
             }
             else
             {
-                MessageBox.Show("User Does'nt Exist");
+                MessageBox.Show("Invalid username or password.");
             }
         }
     }

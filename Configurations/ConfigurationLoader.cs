@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Fastfood_Kiosk_V0.Models;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,7 +15,8 @@ namespace Fastfood_Kiosk_V0.Configurations
         public ConfigurationLoader()
         {
             Configuration = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
+                //.SetBasePath(Directory.GetCurrentDirectory())
+                .SetBasePath("D:\\Fastfood_Kiosk_V0\\Configurations")
                 .AddJsonFile("AppSettings.json", optional: false, reloadOnChange: true)
                 .Build();
         }
