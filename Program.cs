@@ -15,7 +15,7 @@ namespace Fastfood_Kiosk_V0
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Views.AddingCategoryView());
-            Application.Run(new Views.CustomerIndexView());
+            Application.Run(new Views.AdminCategoryView());
         }
     }
 }
