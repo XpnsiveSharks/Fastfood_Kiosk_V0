@@ -28,194 +28,179 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.CancelCategory = new Guna.UI2.WinForms.Guna2Button();
-            this.SaveCategory = new Guna.UI2.WinForms.Guna2Button();
-            this.UploadImage = new Guna.UI2.WinForms.Guna2Button();
-            this.CategoryName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.PreviewImage = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2TabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PreviewImage)).BeginInit();
+            this.ControlBoxPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.AdminCategoryPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.CategoryListButton = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.MenuItemsListButton = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.AdminCategoryMainPanel = new System.Windows.Forms.Panel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.CloseControlBox = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.MaximizeControlBox = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.MinimizeControlBox = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.ControlBoxPanel.SuspendLayout();
+            this.AdminCategoryPanel.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // guna2TabControl1
+            // ControlBoxPanel
             // 
-            this.guna2TabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.guna2TabControl1.Controls.Add(this.tabPage1);
-            this.guna2TabControl1.Controls.Add(this.tabPage2);
-            this.guna2TabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2TabControl1.ItemSize = new System.Drawing.Size(180, 40);
-            this.guna2TabControl1.Location = new System.Drawing.Point(0, 0);
-            this.guna2TabControl1.Name = "guna2TabControl1";
-            this.guna2TabControl1.SelectedIndex = 0;
-            this.guna2TabControl1.Size = new System.Drawing.Size(1023, 588);
-            this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.guna2TabControl1.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2TabControl1.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2TabControl1.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.guna2TabControl1.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.guna2TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.guna2TabControl1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2TabControl1.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
-            this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2TabControl1.TabButtonSize = new System.Drawing.Size(180, 40);
-            this.guna2TabControl1.TabIndex = 0;
-            this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(54)))));
+            this.ControlBoxPanel.Controls.Add(this.guna2Panel1);
+            this.ControlBoxPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ControlBoxPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.ControlBoxPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(54)))));
+            this.ControlBoxPanel.Location = new System.Drawing.Point(0, 0);
+            this.ControlBoxPanel.Name = "ControlBoxPanel";
+            this.ControlBoxPanel.Size = new System.Drawing.Size(1700, 100);
+            this.ControlBoxPanel.TabIndex = 0;
             // 
-            // tabPage1
+            // AdminCategoryPanel
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(225)))));
-            this.tabPage1.Controls.Add(this.CancelCategory);
-            this.tabPage1.Controls.Add(this.SaveCategory);
-            this.tabPage1.Controls.Add(this.UploadImage);
-            this.tabPage1.Controls.Add(this.CategoryName);
-            this.tabPage1.Controls.Add(this.PreviewImage);
-            this.tabPage1.Location = new System.Drawing.Point(184, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(835, 580);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Add Category ";
+            this.AdminCategoryPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(251)))));
+            this.AdminCategoryPanel.Controls.Add(this.MenuItemsListButton);
+            this.AdminCategoryPanel.Controls.Add(this.CategoryListButton);
+            this.AdminCategoryPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.AdminCategoryPanel.Location = new System.Drawing.Point(0, 100);
+            this.AdminCategoryPanel.Name = "AdminCategoryPanel";
+            this.AdminCategoryPanel.Size = new System.Drawing.Size(250, 850);
+            this.AdminCategoryPanel.TabIndex = 1;
             // 
-            // tabPage2
+            // CategoryListButton
             // 
-            this.tabPage2.Location = new System.Drawing.Point(184, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(835, 580);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.CategoryListButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.CategoryListButton.BorderRadius = 25;
+            this.CategoryListButton.BorderThickness = 2;
+            this.CategoryListButton.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.CategoryListButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.CategoryListButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.CategoryListButton.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.CategoryListButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.CategoryListButton.FillColor = System.Drawing.Color.Transparent;
+            this.CategoryListButton.FillColor2 = System.Drawing.Color.Transparent;
+            this.CategoryListButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategoryListButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.CategoryListButton.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.CategoryListButton.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(54)))));
+            this.CategoryListButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(225)))));
+            this.CategoryListButton.Location = new System.Drawing.Point(6, 10);
+            this.CategoryListButton.Name = "CategoryListButton";
+            this.CategoryListButton.Size = new System.Drawing.Size(235, 59);
+            this.CategoryListButton.TabIndex = 2;
+            this.CategoryListButton.Text = "Category List";
+            this.CategoryListButton.Click += new System.EventHandler(this.CategoryListButton_Click);
             // 
-            // CancelCategory
+            // MenuItemsListButton
             // 
-            this.CancelCategory.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CancelCategory.BackColor = System.Drawing.Color.Transparent;
-            this.CancelCategory.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.CancelCategory.BorderRadius = 20;
-            this.CancelCategory.BorderThickness = 2;
-            this.CancelCategory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.CancelCategory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.CancelCategory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.CancelCategory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.CancelCategory.FillColor = System.Drawing.Color.Transparent;
-            this.CancelCategory.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CancelCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.CancelCategory.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.CancelCategory.Location = new System.Drawing.Point(442, 509);
-            this.CancelCategory.Name = "CancelCategory";
-            this.CancelCategory.Size = new System.Drawing.Size(105, 43);
-            this.CancelCategory.TabIndex = 20;
-            this.CancelCategory.Text = "CANCEL";
+            this.MenuItemsListButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.MenuItemsListButton.BorderRadius = 25;
+            this.MenuItemsListButton.BorderThickness = 2;
+            this.MenuItemsListButton.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.MenuItemsListButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.MenuItemsListButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.MenuItemsListButton.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.MenuItemsListButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.MenuItemsListButton.FillColor = System.Drawing.Color.Transparent;
+            this.MenuItemsListButton.FillColor2 = System.Drawing.Color.Transparent;
+            this.MenuItemsListButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MenuItemsListButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.MenuItemsListButton.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.MenuItemsListButton.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(54)))));
+            this.MenuItemsListButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(225)))));
+            this.MenuItemsListButton.Location = new System.Drawing.Point(6, 75);
+            this.MenuItemsListButton.Name = "MenuItemsListButton";
+            this.MenuItemsListButton.Size = new System.Drawing.Size(235, 59);
+            this.MenuItemsListButton.TabIndex = 3;
+            this.MenuItemsListButton.Text = "Menu Items List";
             // 
-            // SaveCategory
+            // AdminCategoryMainPanel
             // 
-            this.SaveCategory.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.SaveCategory.BackColor = System.Drawing.Color.Transparent;
-            this.SaveCategory.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.SaveCategory.BorderRadius = 20;
-            this.SaveCategory.BorderThickness = 2;
-            this.SaveCategory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.SaveCategory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.SaveCategory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.SaveCategory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.SaveCategory.FillColor = System.Drawing.Color.Transparent;
-            this.SaveCategory.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SaveCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.SaveCategory.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.SaveCategory.Location = new System.Drawing.Point(287, 509);
-            this.SaveCategory.Name = "SaveCategory";
-            this.SaveCategory.Size = new System.Drawing.Size(107, 43);
-            this.SaveCategory.TabIndex = 19;
-            this.SaveCategory.Text = "SAVE";
+            this.AdminCategoryMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AdminCategoryMainPanel.Location = new System.Drawing.Point(250, 100);
+            this.AdminCategoryMainPanel.Name = "AdminCategoryMainPanel";
+            this.AdminCategoryMainPanel.Size = new System.Drawing.Size(1450, 850);
+            this.AdminCategoryMainPanel.TabIndex = 2;
             // 
-            // UploadImage
+            // guna2Panel1
             // 
-            this.UploadImage.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.UploadImage.BorderRadius = 20;
-            this.UploadImage.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.UploadImage.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.UploadImage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.UploadImage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.UploadImage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(54)))));
-            this.UploadImage.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.UploadImage.ForeColor = System.Drawing.Color.White;
-            this.UploadImage.Location = new System.Drawing.Point(344, 445);
-            this.UploadImage.Name = "UploadImage";
-            this.UploadImage.Size = new System.Drawing.Size(151, 43);
-            this.UploadImage.TabIndex = 18;
-            this.UploadImage.Text = "*Upload Image";
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.Controls.Add(this.MinimizeControlBox);
+            this.guna2Panel1.Controls.Add(this.MaximizeControlBox);
+            this.guna2Panel1.Controls.Add(this.CloseControlBox);
+            this.guna2Panel1.Location = new System.Drawing.Point(1491, 20);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(188, 46);
+            this.guna2Panel1.TabIndex = 0;
             // 
-            // CategoryName
+            // CloseControlBox
             // 
-            this.CategoryName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CategoryName.BorderRadius = 3;
-            this.CategoryName.BorderThickness = 0;
-            this.CategoryName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.CategoryName.DefaultText = "";
-            this.CategoryName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.CategoryName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.CategoryName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.CategoryName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.CategoryName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CategoryName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.CategoryName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CategoryName.Location = new System.Drawing.Point(287, 385);
-            this.CategoryName.Name = "CategoryName";
-            this.CategoryName.PasswordChar = '\0';
-            this.CategoryName.PlaceholderText = "*Enter Category Name";
-            this.CategoryName.SelectedText = "";
-            this.CategoryName.Size = new System.Drawing.Size(260, 36);
-            this.CategoryName.TabIndex = 17;
-            this.CategoryName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CloseControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CloseControlBox.BorderColor = System.Drawing.Color.Transparent;
+            this.CloseControlBox.FillColor = System.Drawing.Color.Transparent;
+            this.CloseControlBox.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.CloseControlBox.IconColor = System.Drawing.Color.Black;
+            this.CloseControlBox.Location = new System.Drawing.Point(140, 3);
+            this.CloseControlBox.Name = "CloseControlBox";
+            this.CloseControlBox.Size = new System.Drawing.Size(45, 40);
+            this.CloseControlBox.TabIndex = 0;
             // 
-            // PreviewImage
+            // MaximizeControlBox
             // 
-            this.PreviewImage.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PreviewImage.BackColor = System.Drawing.Color.Transparent;
-            this.PreviewImage.BorderRadius = 15;
-            this.PreviewImage.ImageRotate = 0F;
-            this.PreviewImage.Location = new System.Drawing.Point(287, 28);
-            this.PreviewImage.Name = "PreviewImage";
-            this.PreviewImage.Size = new System.Drawing.Size(260, 335);
-            this.PreviewImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PreviewImage.TabIndex = 16;
-            this.PreviewImage.TabStop = false;
+            this.MaximizeControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MaximizeControlBox.BorderColor = System.Drawing.Color.Transparent;
+            this.MaximizeControlBox.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
+            this.MaximizeControlBox.FillColor = System.Drawing.Color.Transparent;
+            this.MaximizeControlBox.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.MaximizeControlBox.IconColor = System.Drawing.Color.Black;
+            this.MaximizeControlBox.Location = new System.Drawing.Point(72, 3);
+            this.MaximizeControlBox.Name = "MaximizeControlBox";
+            this.MaximizeControlBox.Size = new System.Drawing.Size(45, 40);
+            this.MaximizeControlBox.TabIndex = 1;
+            // 
+            // MinimizeControlBox
+            // 
+            this.MinimizeControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MinimizeControlBox.BorderColor = System.Drawing.Color.Transparent;
+            this.MinimizeControlBox.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.MinimizeControlBox.FillColor = System.Drawing.Color.Transparent;
+            this.MinimizeControlBox.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.MinimizeControlBox.IconColor = System.Drawing.Color.Black;
+            this.MinimizeControlBox.Location = new System.Drawing.Point(21, 3);
+            this.MinimizeControlBox.Name = "MinimizeControlBox";
+            this.MinimizeControlBox.Size = new System.Drawing.Size(45, 40);
+            this.MinimizeControlBox.TabIndex = 2;
             // 
             // AdminCategoryView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1023, 588);
-            this.Controls.Add(this.guna2TabControl1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(225)))));
+            this.ClientSize = new System.Drawing.Size(1700, 950);
+            this.Controls.Add(this.AdminCategoryMainPanel);
+            this.Controls.Add(this.AdminCategoryPanel);
+            this.Controls.Add(this.ControlBoxPanel);
+            this.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AdminCategoryView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminCategoryView";
             this.Load += new System.EventHandler(this.AdminCategoryView_Load);
-            this.guna2TabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PreviewImage)).EndInit();
+            this.ControlBoxPanel.ResumeLayout(false);
+            this.AdminCategoryPanel.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private Guna.UI2.WinForms.Guna2Button CancelCategory;
-        private Guna.UI2.WinForms.Guna2Button SaveCategory;
-        private Guna.UI2.WinForms.Guna2Button UploadImage;
-        private Guna.UI2.WinForms.Guna2TextBox CategoryName;
-        private Guna.UI2.WinForms.Guna2PictureBox PreviewImage;
+        private Guna.UI2.WinForms.Guna2GradientPanel ControlBoxPanel;
+        private Guna.UI2.WinForms.Guna2Panel AdminCategoryPanel;
+        private Guna.UI2.WinForms.Guna2GradientTileButton CategoryListButton;
+        private Guna.UI2.WinForms.Guna2GradientTileButton MenuItemsListButton;
+        private System.Windows.Forms.Panel AdminCategoryMainPanel;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2ControlBox MaximizeControlBox;
+        private Guna.UI2.WinForms.Guna2ControlBox CloseControlBox;
+        private Guna.UI2.WinForms.Guna2ControlBox MinimizeControlBox;
     }
 }
