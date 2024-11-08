@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fastfood_Kiosk_V0.Views.UserControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,19 @@ namespace Fastfood_Kiosk_V0.Views
         private void AdminCategoryView_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void LoadCategoryListUserControl()
+        {
+            CategoryListUserControl _categoryListUserControl = new CategoryListUserControl();
+            _categoryListUserControl.Dock = DockStyle.Fill;
+            AdminCategoryMainPanel.Controls.Clear();
+            AdminCategoryMainPanel.Controls.Add(_categoryListUserControl);
+        }
+
+        private void CategoryListButton_Click(object sender, EventArgs e)
+        {
+            LoadCategoryListUserControl();
         }
     }
 }

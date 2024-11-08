@@ -11,6 +11,5 @@ namespace Fastfood_Kiosk_V0.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
         private int _categoryId;
         public int MyProperty { get; set; }
-        //baka makalimutan mo may gagawin ka dito teh
     }
 }

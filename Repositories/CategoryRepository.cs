@@ -32,8 +32,7 @@ namespace Fastfood_Kiosk_V0.Repositories
                         Category_Image_File_Path = category.Category_Image_File_Path
                     });
                 }
-            }
-            catch(SqlException ex) 
+            }             catch(SqlException ex) 
             {
                 throw new Exception("An error has occured while accessing the database", ex);
             }
@@ -43,6 +42,7 @@ namespace Fastfood_Kiosk_V0.Repositories
         {
             try
             {
+
                 using (var connection = _databaseConnection.GetConnection())
                 {
                     return connection.Query<Category>("SELECT * FROM menu_category_table").ToList();

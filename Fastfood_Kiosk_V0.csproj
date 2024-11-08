@@ -181,6 +181,18 @@
     <Compile Include="Views\LoginView.Designer.cs">
       <DependentUpon>LoginView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControls\AddCategoryUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControls\AddCategoryUserControl.Designer.cs">
+      <DependentUpon>AddCategoryUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\CategoryListUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControls\CategoryListUserControl.Designer.cs">
+      <DependentUpon>CategoryListUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\DisplayCategoryUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -213,6 +225,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControls\AddCategoryUserControl.resx">
+      <DependentUpon>AddCategoryUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControls\CategoryListUserControl.resx">
+      <DependentUpon>CategoryListUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserControls\DisplayCategoryUserControl.resx">
       <DependentUpon>DisplayCategoryUserControl.cs</DependentUpon>
