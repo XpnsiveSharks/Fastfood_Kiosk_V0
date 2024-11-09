@@ -22,7 +22,7 @@ namespace Fastfood_Kiosk_V0.Views.UserControls
         {     
                 if (this.Parent != null)
                 {
-                    this.Parent.Controls.Remove(this);
+                    this.Parent.Controls.Remove( this );
                 }     
         }
     }
