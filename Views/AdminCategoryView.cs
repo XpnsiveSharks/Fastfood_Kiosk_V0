@@ -21,7 +21,7 @@ namespace Fastfood_Kiosk_V0.Views
 
         private void AdminCategoryView_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void LoadCategoryListUserControl()
@@ -35,6 +35,26 @@ namespace Fastfood_Kiosk_V0.Views
         private void CategoryListButton_Click(object sender, EventArgs e)
         {
             LoadCategoryListUserControl();
+        }
+
+        private void LoadMenuItemUserControl()
+        {
+            AddMenuItemUserControl addMenuItemUserControl = new AddMenuItemUserControl();
+            addMenuItemUserControl.Dock = DockStyle.Fill;
+            AdminCategoryMainPanel.Controls.Clear();
+            AdminCategoryMainPanel.Controls.Add(addMenuItemUserControl);
+        }
+
+      
+        private void MenuItemsListButton_Click(object sender, EventArgs e)
+        {
+            LoadMenuItemUserControl();
+        }
+
+       
+        private void AdminCategoryMainPanel_Paint(object sender, PaintEventArgs e)
+        {
+          
         }
     }
 }

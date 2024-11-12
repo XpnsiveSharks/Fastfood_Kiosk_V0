@@ -187,6 +187,12 @@
     <Compile Include="Views\UserControls\AddCategoryUserControl.Designer.cs">
       <DependentUpon>AddCategoryUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControls\AddMenuItemUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControls\AddMenuItemUserControl.Designer.cs">
+      <DependentUpon>AddMenuItemUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\CategoryListUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserControls\AddCategoryUserControl.resx">
       <DependentUpon>AddCategoryUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControls\AddMenuItemUserControl.resx">
+      <DependentUpon>AddMenuItemUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserControls\CategoryListUserControl.resx">
       <DependentUpon>CategoryListUserControl.cs</DependentUpon>

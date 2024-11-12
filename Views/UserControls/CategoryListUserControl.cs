@@ -17,16 +17,17 @@ namespace Fastfood_Kiosk_V0.Views.UserControls
             InitializeComponent();
         }
 
+     
         private void LoadAddCategoryUserControl()
         {
-            AddCategoryUserControl _addCategoryUserControl = new AddCategoryUserControl();
-            _addCategoryUserControl.Dock = DockStyle.Fill;
-            CategoryListFlowLayoutPanel.Controls.Clear();
-            CategoryListFlowLayoutPanel.Controls.Add( _addCategoryUserControl);
+            AddCategoryUserControl _addCategoryUSerControl = new AddCategoryUserControl();
+            CategoryListFlowLayoutPanel.Controls.Add(_addCategoryUSerControl);
         }
         private void AddCategoryButton_Click(object sender, EventArgs e)
         {
             LoadAddCategoryUserControl();
         }
+
+     
     }
 }
