@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.ControlBoxPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.AdminCategoryPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.CategoryListButton = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.MenuItemsListButton = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.AdminCategoryMainPanel = new System.Windows.Forms.Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.CloseControlBox = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.MaximizeControlBox = new Guna.UI2.WinForms.Guna2ControlBox();
             this.MinimizeControlBox = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.MaximizeControlBox = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.CloseControlBox = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.AdminCategoryPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.MenuItemsListButton = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.CategoryListButton = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.AdminCategoryMainPanel = new System.Windows.Forms.Panel();
             this.ControlBoxPanel.SuspendLayout();
-            this.AdminCategoryPanel.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
+            this.AdminCategoryPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // ControlBoxPanel
@@ -53,6 +53,55 @@
             this.ControlBoxPanel.Size = new System.Drawing.Size(1700, 100);
             this.ControlBoxPanel.TabIndex = 0;
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.Controls.Add(this.MinimizeControlBox);
+            this.guna2Panel1.Controls.Add(this.MaximizeControlBox);
+            this.guna2Panel1.Controls.Add(this.CloseControlBox);
+            this.guna2Panel1.Location = new System.Drawing.Point(1491, 20);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(188, 46);
+            this.guna2Panel1.TabIndex = 0;
+            // 
+            // MinimizeControlBox
+            // 
+            this.MinimizeControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MinimizeControlBox.BorderColor = System.Drawing.Color.Transparent;
+            this.MinimizeControlBox.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.MinimizeControlBox.FillColor = System.Drawing.Color.Transparent;
+            this.MinimizeControlBox.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.MinimizeControlBox.IconColor = System.Drawing.Color.Black;
+            this.MinimizeControlBox.Location = new System.Drawing.Point(21, 3);
+            this.MinimizeControlBox.Name = "MinimizeControlBox";
+            this.MinimizeControlBox.Size = new System.Drawing.Size(45, 40);
+            this.MinimizeControlBox.TabIndex = 2;
+            // 
+            // MaximizeControlBox
+            // 
+            this.MaximizeControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MaximizeControlBox.BorderColor = System.Drawing.Color.Transparent;
+            this.MaximizeControlBox.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
+            this.MaximizeControlBox.FillColor = System.Drawing.Color.Transparent;
+            this.MaximizeControlBox.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.MaximizeControlBox.IconColor = System.Drawing.Color.Black;
+            this.MaximizeControlBox.Location = new System.Drawing.Point(72, 3);
+            this.MaximizeControlBox.Name = "MaximizeControlBox";
+            this.MaximizeControlBox.Size = new System.Drawing.Size(45, 40);
+            this.MaximizeControlBox.TabIndex = 1;
+            // 
+            // CloseControlBox
+            // 
+            this.CloseControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CloseControlBox.BorderColor = System.Drawing.Color.Transparent;
+            this.CloseControlBox.FillColor = System.Drawing.Color.Transparent;
+            this.CloseControlBox.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.CloseControlBox.IconColor = System.Drawing.Color.Black;
+            this.CloseControlBox.Location = new System.Drawing.Point(140, 3);
+            this.CloseControlBox.Name = "CloseControlBox";
+            this.CloseControlBox.Size = new System.Drawing.Size(45, 40);
+            this.CloseControlBox.TabIndex = 0;
+            // 
             // AdminCategoryPanel
             // 
             this.AdminCategoryPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(251)))));
@@ -63,6 +112,29 @@
             this.AdminCategoryPanel.Name = "AdminCategoryPanel";
             this.AdminCategoryPanel.Size = new System.Drawing.Size(250, 850);
             this.AdminCategoryPanel.TabIndex = 1;
+            // 
+            // MenuItemsListButton
+            // 
+            this.MenuItemsListButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.MenuItemsListButton.BorderRadius = 25;
+            this.MenuItemsListButton.BorderThickness = 2;
+            this.MenuItemsListButton.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.MenuItemsListButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.MenuItemsListButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.MenuItemsListButton.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.MenuItemsListButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.MenuItemsListButton.FillColor = System.Drawing.Color.Transparent;
+            this.MenuItemsListButton.FillColor2 = System.Drawing.Color.Transparent;
+            this.MenuItemsListButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MenuItemsListButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.MenuItemsListButton.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.MenuItemsListButton.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(54)))));
+            this.MenuItemsListButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(225)))));
+            this.MenuItemsListButton.Location = new System.Drawing.Point(6, 75);
+            this.MenuItemsListButton.Name = "MenuItemsListButton";
+            this.MenuItemsListButton.Size = new System.Drawing.Size(235, 59);
+            this.MenuItemsListButton.TabIndex = 3;
+            this.MenuItemsListButton.Text = "Menu Items List";
             // 
             // CategoryListButton
             // 
@@ -88,29 +160,6 @@
             this.CategoryListButton.Text = "Category List";
             this.CategoryListButton.Click += new System.EventHandler(this.CategoryListButton_Click);
             // 
-            // MenuItemsListButton
-            // 
-            this.MenuItemsListButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.MenuItemsListButton.BorderRadius = 25;
-            this.MenuItemsListButton.BorderThickness = 2;
-            this.MenuItemsListButton.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.MenuItemsListButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.MenuItemsListButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.MenuItemsListButton.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.MenuItemsListButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.MenuItemsListButton.FillColor = System.Drawing.Color.Transparent;
-            this.MenuItemsListButton.FillColor2 = System.Drawing.Color.Transparent;
-            this.MenuItemsListButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MenuItemsListButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.MenuItemsListButton.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.MenuItemsListButton.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(54)))));
-            this.MenuItemsListButton.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(225)))));
-            this.MenuItemsListButton.Location = new System.Drawing.Point(6, 75);
-            this.MenuItemsListButton.Name = "MenuItemsListButton";
-            this.MenuItemsListButton.Size = new System.Drawing.Size(235, 59);
-            this.MenuItemsListButton.TabIndex = 3;
-            this.MenuItemsListButton.Text = "Menu Items List";
-            // 
             // AdminCategoryMainPanel
             // 
             this.AdminCategoryMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -119,59 +168,11 @@
             this.AdminCategoryMainPanel.Size = new System.Drawing.Size(1450, 850);
             this.AdminCategoryMainPanel.TabIndex = 2;
             // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.Controls.Add(this.MinimizeControlBox);
-            this.guna2Panel1.Controls.Add(this.MaximizeControlBox);
-            this.guna2Panel1.Controls.Add(this.CloseControlBox);
-            this.guna2Panel1.Location = new System.Drawing.Point(1491, 20);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(188, 46);
-            this.guna2Panel1.TabIndex = 0;
-            // 
-            // CloseControlBox
-            // 
-            this.CloseControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseControlBox.BorderColor = System.Drawing.Color.Transparent;
-            this.CloseControlBox.FillColor = System.Drawing.Color.Transparent;
-            this.CloseControlBox.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.CloseControlBox.IconColor = System.Drawing.Color.Black;
-            this.CloseControlBox.Location = new System.Drawing.Point(140, 3);
-            this.CloseControlBox.Name = "CloseControlBox";
-            this.CloseControlBox.Size = new System.Drawing.Size(45, 40);
-            this.CloseControlBox.TabIndex = 0;
-            // 
-            // MaximizeControlBox
-            // 
-            this.MaximizeControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MaximizeControlBox.BorderColor = System.Drawing.Color.Transparent;
-            this.MaximizeControlBox.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
-            this.MaximizeControlBox.FillColor = System.Drawing.Color.Transparent;
-            this.MaximizeControlBox.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.MaximizeControlBox.IconColor = System.Drawing.Color.Black;
-            this.MaximizeControlBox.Location = new System.Drawing.Point(72, 3);
-            this.MaximizeControlBox.Name = "MaximizeControlBox";
-            this.MaximizeControlBox.Size = new System.Drawing.Size(45, 40);
-            this.MaximizeControlBox.TabIndex = 1;
-            // 
-            // MinimizeControlBox
-            // 
-            this.MinimizeControlBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.MinimizeControlBox.BorderColor = System.Drawing.Color.Transparent;
-            this.MinimizeControlBox.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.MinimizeControlBox.FillColor = System.Drawing.Color.Transparent;
-            this.MinimizeControlBox.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.MinimizeControlBox.IconColor = System.Drawing.Color.Black;
-            this.MinimizeControlBox.Location = new System.Drawing.Point(21, 3);
-            this.MinimizeControlBox.Name = "MinimizeControlBox";
-            this.MinimizeControlBox.Size = new System.Drawing.Size(45, 40);
-            this.MinimizeControlBox.TabIndex = 2;
-            // 
             // AdminCategoryView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(225)))));
             this.ClientSize = new System.Drawing.Size(1700, 950);
             this.Controls.Add(this.AdminCategoryMainPanel);
@@ -185,8 +186,8 @@
             this.Text = "AdminCategoryView";
             this.Load += new System.EventHandler(this.AdminCategoryView_Load);
             this.ControlBoxPanel.ResumeLayout(false);
-            this.AdminCategoryPanel.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
+            this.AdminCategoryPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
